@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forma — Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #1c1c1e;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .app-badge {
+      display: inline-block;
+      background: #30D158;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+    }
+    .updated {
+      font-size: 0.85rem;
+      color: #8e8e93;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-top: 36px;
+      margin-bottom: 10px;
+      color: #1c1c1e;
+    }
+    p { margin-bottom: 14px; }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    li { margin-bottom: 6px; }
+    a { color: #30D158; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .contact-box {
+      background: #f2f9f5;
+      border: 1px solid #30D15830;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 32px;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 0.8rem;
+      color: #8e8e93;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="app-badge">FORMA</div>
+    <p class="updated">Last updated: April 24, 2026</p>
+
+    <div class="card">
+      <p>
+        Forma ("we", "our", or "the app") is a running and recovery tracking application for iOS.
+        We are committed to protecting your personal information and your right to privacy.
+        This Privacy Policy explains what data we collect, how we use it, and your choices.
+      </p>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <div class="card">
+      <p><strong>Account information</strong></p>
+      <ul>
+        <li>Email address (used for authentication)</li>
+        <li>Display name and username (optional, set by you)</li>
+        <li>Profile photo (optional, uploaded by you)</li>
+      </ul>
+
+      <p><strong>Health &amp; fitness data (via Apple HealthKit)</strong></p>
+      <ul>
+        <li>Heart rate and resting heart rate</li>
+        <li>Sleep analysis</li>
+        <li>Step count</li>
+        <li>Workout sessions</li>
+        <li>VO2 max (when available)</li>
+      </ul>
+      <p>HealthKit data is used only within the app to calculate your recovery, readiness, and training metrics. It is never shared with advertisers or third parties for commercial purposes.</p>
+
+      <p><strong>Wearable device data (via Oura API)</strong></p>
+      <ul>
+        <li>Readiness score, sleep score, HRV, resting heart rate</li>
+        <li>Sleep stages (hypnogram), body temperature</li>
+        <li>Stress balance</li>
+      </ul>
+      <p>This data is fetched from Oura's servers using your personal OAuth token and is stored on our secure backend (Supabase) solely to power your dashboard and analytics.</p>
+
+      <p><strong>Location data</strong></p>
+      <ul>
+        <li>GPS coordinates during active runs (for route tracking, distance, and pace)</li>
+      </ul>
+      <p>Location is collected only when you start a run. We do not track your location in the background outside of active workouts.</p>
+
+      <p><strong>Usage data</strong></p>
+      <ul>
+        <li>Run records you create (distance, duration, route, heart rate zones)</li>
+        <li>Shoes you add and their mileage</li>
+        <li>App settings and preferences</li>
+      </ul>
+    </div>
+
+    <h2>2. How We Use Your Data</h2>
+    <div class="card">
+      <ul>
+        <li>Display your personalized recovery dashboard (readiness, sleep, HRV)</li>
+        <li>Calculate training load, form score, and recommendations</li>
+        <li>Show your run history, statistics, and analytics</li>
+        <li>Enable social features (friends, squad leaderboard, run feed) — only with people you choose to follow</li>
+        <li>Send push notifications you have opted into (morning briefing, workout reminders)</li>
+        <li>Sync data between your devices via our secure backend</li>
+      </ul>
+      <p>We do <strong>not</strong> sell your data. We do not use your health data for advertising.</p>
+    </div>
+
+    <h2>3. Data Storage &amp; Security</h2>
+    <div class="card">
+      <p>
+        Your data is stored securely on <strong>Supabase</strong> infrastructure (hosted in the EU / US).
+        All data in transit is encrypted via TLS. Authentication tokens are stored in the iOS Keychain.
+        HealthKit data is processed on-device and only the derived metrics (scores, averages) are
+        synced to our servers — raw HealthKit samples never leave your device.
+      </p>
+    </div>
+
+    <h2>4. Data Sharing</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Friends you add</strong> — they can see your readiness score, sleep score, and recent runs if you enable sharing in Settings → Privacy.</li>
+        <li><strong>Oura</strong> — we access your Oura data via OAuth on your behalf. We do not share your data back with Oura beyond what their API requires.</li>
+        <li><strong>Apple</strong> — if you use Sign in with Apple, Apple processes your authentication. We receive only your email (or a relay address).</li>
+        <li><strong>No advertising networks</strong> — we do not integrate any ad SDKs or sell data to advertisers.</li>
+      </ul>
+    </div>
+
+    <h2>5. Apple HealthKit</h2>
+    <div class="card">
+      <p>
+        Forma accesses Apple HealthKit data only with your explicit permission.
+        You can revoke HealthKit access at any time in <strong>Settings → Privacy &amp; Security → Health → Forma</strong>.
+      </p>
+      <p>
+        HealthKit data is used exclusively to provide your in-app experience.
+        It will never be shared with third parties, used for advertising, or sold.
+      </p>
+    </div>
+
+    <h2>6. Push Notifications</h2>
+    <div class="card">
+      <p>
+        We may send you push notifications for: morning recovery briefing, workout reminders,
+        and social interactions (friend requests, kudos). You can manage or disable notifications
+        at any time in <strong>Settings → Notifications</strong> within Forma, or in <strong>iOS Settings → Forma → Notifications</strong>.
+      </p>
+    </div>
+
+    <h2>7. Your Rights</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Access</strong> — you can view all data we store about you in the app.</li>
+        <li><strong>Deletion</strong> — you can delete your account and all associated data from <strong>Settings → Account → Delete Account</strong>. This permanently removes all your data from our servers.</li>
+        <li><strong>Export</strong> — your run data can be exported in the app (Settings → Export Data).</li>
+        <li><strong>Opt-out</strong> — you can disable health data sharing with friends at any time in Settings → Privacy.</li>
+      </ul>
+    </div>
+
+    <h2>8. Children's Privacy</h2>
+    <div class="card">
+      <p>
+        Forma is not intended for children under 13. We do not knowingly collect personal
+        information from children under 13. If you believe a child has provided us with personal
+        information, please contact us to have it removed.
+      </p>
+    </div>
+
+    <h2>9. Changes to This Policy</h2>
+    <div class="card">
+      <p>
+        We may update this Privacy Policy from time to time. We will notify you of significant
+        changes via a notification in the app. Continued use of Forma after changes constitutes
+        acceptance of the updated policy.
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <h2 style="margin-top:0">10. Contact Us</h2>
+      <p>
+        If you have any questions about this Privacy Policy or how we handle your data, please contact us:
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:evgeniymarendich@gmail.com">evgeniymarendich@gmail.com</a>
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2026 Forma. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
