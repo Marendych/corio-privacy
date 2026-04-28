@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forma — Support</title>
+  <meta name="description" content="Support and FAQ for Forma, an iOS running and recovery tracking app." />
+  <link rel="stylesheet" href="assets/shared.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/">FORMA</a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html" class="active">Support</a>
+      <a href="mailto:evgeniymarendich@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Support</h1>
+    <div class="app-badge">FORMA</div>
+    <p class="updated">We're here to help.</p>
+
+    <div class="card">
+      <p>
+        Need help with Forma? Found a bug? Have a feature request?
+        We read every email and aim to reply within 48 hours.
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:evgeniymarendich@gmail.com">evgeniymarendich@gmail.com</a>
+      </p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How do I connect my Oura Ring?</h3>
+    <div class="card">
+      <p>
+        Go to <strong>Settings → Wearables → Oura Ring → Connect</strong>.
+        You'll be redirected to Oura's secure login page.
+        After authorizing Forma, your daily readiness, sleep, HRV, and stress data will sync automatically.
+      </p>
+    </div>
+
+    <h3>How do I connect WHOOP?</h3>
+    <div class="card">
+      <p>
+        Go to <strong>Settings → Wearables → WHOOP → Connect</strong>.
+        Sign in with your WHOOP account to grant Forma read access to your recovery, strain, and sleep data.
+      </p>
+    </div>
+
+    <h3>How do I delete my account?</h3>
+    <div class="card">
+      <p>
+        Open Forma → <strong>You tab → Settings → Account → Delete Account</strong>.
+        This immediately deletes all your data from our servers.
+        There is no recovery — backup any data you want to keep before deleting.
+      </p>
+    </div>
+
+    <h3>The app shows "no data" — what should I do?</h3>
+    <div class="card">
+      <p>Try these steps in order:</p>
+      <ol>
+        <li>
+          Make sure HealthKit permissions are granted:
+          <strong>iOS Settings → Privacy &amp; Security → Health → Forma</strong> — turn on all categories.
+        </li>
+        <li>
+          If you connected Oura or WHOOP, pull-to-refresh on the Home tab to force a sync.
+        </li>
+        <li>
+          Check your internet connection — Forma needs network access to sync wearable data.
+        </li>
+        <li>
+          Sign out and sign back in (Settings → Account → Sign Out).
+        </li>
+        <li>
+          If still not working, email us with your account email and a description of the issue.
+        </li>
+      </ol>
+    </div>
+
+    <h3>Where is my data stored?</h3>
+    <div class="card">
+      <p>
+        Your account data lives on Supabase servers in the EU (London region), encrypted at rest.
+        Health data on your iPhone is governed by Apple HealthKit and never leaves your device unencrypted.
+        Authentication tokens (Oura, WHOOP) are stored in iOS Keychain, protected by Secure Enclave.
+      </p>
+      <p>
+        See our <a href="privacy.html">Privacy Policy</a> for details.
+      </p>
+    </div>
+
+    <h3>I forgot my password</h3>
+    <div class="card">
+      <p>
+        On the Sign In screen, tap <strong>"Forgot password"</strong> and enter your email.
+        Check your inbox (and spam folder) for a reset link from <em>noreply@mail.app.supabase.io</em>.
+      </p>
+    </div>
+
+    <h3>Forma crashed — how do I report it?</h3>
+    <div class="card">
+      <p>
+        Email us with the time of the crash and what you were doing right before it happened.
+        Including your iPhone model and iOS version helps us debug faster.
+      </p>
+      <p>
+        If you're a TestFlight beta tester, you can also report crashes by taking a screenshot during the crash —
+        TestFlight will offer to send it to us automatically.
+      </p>
+    </div>
+
+    <h3>How do I export my running data?</h3>
+    <div class="card">
+      <p>
+        Email us at <a href="mailto:evgeniymarendich@gmail.com">evgeniymarendich@gmail.com</a> from
+        the address associated with your account, with subject <code>[Data Export]</code>.
+        We'll send you a JSON file with all your runs, settings, and synced wearable data within 30 days.
+      </p>
+      <p>
+        We're working on an in-app export feature for a future release.
+      </p>
+    </div>
+
+    <h3>Is Forma a medical device?</h3>
+    <div class="card">
+      <p>
+        <strong>No.</strong> Forma is a fitness and recovery tracking tool for general informational purposes only.
+        It does not diagnose, treat, or prevent any medical condition.
+        Always consult a qualified healthcare provider before making changes to your training or
+        if you experience any concerning symptoms during exercise.
+      </p>
+      <p>
+        See <a href="terms.html#medical">Terms of Service — Health &amp; Medical Disclaimer</a>.
+      </p>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="card">
+      <p>
+        Still need help? Email us at
+        <a href="mailto:evgeniymarendich@gmail.com">evgeniymarendich@gmail.com</a>.
+      </p>
+      <p>
+        Please include your account email, iPhone model, iOS version, and a description of the issue.
+        Screenshots help a lot.
+      </p>
+      <p class="updated">Yevhenii Marendych · Kyiv, Ukraine</p>
+    </div>
+  </main>
+</body>
+</html>
