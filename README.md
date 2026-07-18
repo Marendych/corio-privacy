@@ -1,6 +1,6 @@
-# Forma — Marketing Site
+# Corio — Marketing Site
 
-Static marketing site for [Forma](https://marendych.github.io/forma-privacy/), an iOS running and recovery tracking app.
+Static marketing site for [Corio](https://marendych.github.io/corio-privacy/), an iOS running and recovery tracking app.
 
 ## Pages
 - **`index.html`** — Homepage with app overview, screenshots, and contact
